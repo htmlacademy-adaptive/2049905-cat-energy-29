@@ -4,6 +4,7 @@
 .site-navigation__item {
   @include mixins.list;
 }
+
 .site-navigation__link {
   font: 400 20px/20px variables.$oswald-font;
   color: variables.$basic-black;

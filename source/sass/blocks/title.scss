@@ -3,10 +3,13 @@
 .title {
   font: 400 36px/36px variables.$oswald-font;
   color: variables.$basic-black;
+
   &--index-mobile {
     color: variables.$basic-white;
   }
+
   &--mobile {
     line-height: 40px;
   }
+
 }

@@ -10,9 +10,10 @@
 
   &::placeholder {
     font: 400 16px/18px variables.$oswald-font;
-  color: variables.$special-dark-grey;
-  text-transform: uppercase;
+    color: variables.$special-dark-grey;
+    text-transform: uppercase;
   }
+
 }
 
 .form__button {
