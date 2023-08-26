@@ -6,7 +6,11 @@
   background-color: variables.$basic-green;
   text-transform: uppercase;
     &--hero {
-    font-size: 14px;
-    line-height: 18px;
+      font-size: 14px;
+      line-height: 18px;
   }
+    &--gray {
+      color: variables.$special-dark-grey;
+      background-color: variables.$basic-gray;
+   }
 }

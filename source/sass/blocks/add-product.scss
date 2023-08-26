@@ -1,12 +1,13 @@
+@use "base/variables.scss";
+
 .add-product__title {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
+  font: 400 16px/16px variables.$oswald-font;
+  color: variables.$special-darker-grey;
+  text-transform: uppercase;
 }
 .add-product__description,
 .add-product__price
 {
-  font-size: 14px;
-  line-height: 14px;
-
+  font: 400 14px/14px variables.$lato-font;
+  color: variables.$special-dark-grey;
 }

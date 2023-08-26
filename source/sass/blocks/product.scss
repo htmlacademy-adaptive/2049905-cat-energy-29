@@ -1,0 +1,14 @@
+@use "base/mixins.scss";
+@use "base/variables.scss";
+
+.product__link {
+  font: 400 16px/20px variables.$oswald-font;
+  color: variables.$special-darker-grey;
+  text-transform: uppercase;
+}
+
+.product__specification-name,
+.product__specification-value,
+.product__description {
+  font: 400 12px/16px variables.$lato-font;
+}

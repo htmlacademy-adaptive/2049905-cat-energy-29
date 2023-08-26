@@ -1,7 +1,6 @@
-@use "base/mixins.scss";
 @use "base/variables.scss";
+@use "base/mixins.scss";
 
-.catalog__item {
+.additional__item {
   @include mixins.list;
 }
-
