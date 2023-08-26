@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.add-product__title {
+  font: 400 16px/16px "Oswald", "Arial", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.add-product__description,
+.add-product__price {
+  font: 400 14px/14px "Lato", "Arial", sans-serif;
+  color: #444444;
+}
+
+.additional__item {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.advantages__text {
+  font: 400 14px/18px "Lato", "Arial", sans-serif;
+  color: #444444;
+}
+
+.button {
+  font: 400 16px/20px "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #68b738;
+  text-transform: uppercase;
+}
+.button--hero {
+  font-size: 14px;
+  line-height: 18px;
+}
+.button--gray {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.catalog__item {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 20px;
+}
+
+.copyright__link {
+  font: 400 16px/20px "Lato", "Arial", sans-serif;
+  color: #444444;
+}
+
+.example {
+  background-color: #eaeaea;
+}
+
+.example__text {
+  font: 400 14px/18px "Lato", "Arial", sans-serif;
+  color: #444444;
+}
+
+.example__info-total {
+  font: 400 24px/24px "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.example__info-result {
+  font: 400 12px/12px "Lato", "Arial", sans-serif;
+  color: #444444;
+}
+
+.example__info-price {
+  font: 400 14px/20px "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.form__label {
+  font: 400 16px/18px "Oswald", "Arial", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__input::placeholder {
+  font: 400 16px/18px "Oswald", "Arial", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__button {
+  border: none;
+}
+
+.form__mark-require {
+  font: 400 14px/16px "Lato", "Arial", sans-serif;
+}
+
+.gift {
+  height: 300px;
+  position: relative;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-in-bag@1x.jpg") no-repeat;
+}
+
+.gift__text {
+  font: 400 16px/20px "Lato", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.hero {
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg") no-repeat;
+}
+
+.hero__promo {
+  font: 400 14px/14px "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.inner-header__description {
+  font: 400 14px/18px "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.logo-caption {
+  margin: 0;
+}
+
+.logo {
+  margin: 0;
+}
+
+.main-content {
+  margin: 0;
+}
+
+.main-footer__description {
+  font: 400 16px/20px "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.main-footer__address {
+  font: 400 14px/20px "Lato", "Arial", sans-serif;
+}
+
+.main-footer__contact-links {
+  background-color: #f2f2f2;
+}
+
+.main-header {
+  margin: 0;
+}
+
+.map {
+  margin: 0;
+}
+
+.page__body {
+  font: 400 16px/20px "Oswald", "Arial", sans-serif;
+  color: #000000;
+  margin: 0;
+}
+
+.product__link {
+  font: 400 16px/20px "Oswald", "Arial", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product__specification-name,
+.product__specification-value,
+.product__description {
+  font: 400 12px/16px "Lato", "Arial", sans-serif;
+}
+
+.program {
+  background-color: #eaeaea;
+}
+
+.program__title {
+  font: 400 24px/37px "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.program__text {
+  font: 400 14px/18px "Lato", "Arial", sans-serif;
+  color: #444444;
+}
+
+.program__link {
+  font: 400 16px/16px "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.programs__item {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.site-navigation__item {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.site-navigation__link {
+  font: 400 20px/20px "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.slider {
+  margin: 0;
+}
+
+.social-list__item {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sub-title {
+  font: 400 24px/26px "Oswald", "Arial", sans-serif;
+}
+.sub-title--catalog {
+  line-height: 24px;
+}
+
+.title {
+  font: 400 36px/36px "Oswald", "Arial", sans-serif;
+  color: #000000;
+}
+.title--index-mobile {
+  color: #ffffff;
+}
+.title--mobile {
+  line-height: 40px;
+}
+/*# sourceMappingURL=style.css.map */
