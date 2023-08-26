@@ -1,0 +1,7 @@
+@use "base/variables.scss";
+@use "base/mixins.scss";
+
+
+.social-list__item {
+  @include mixins.list;
+}

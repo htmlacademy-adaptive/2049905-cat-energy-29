@@ -1,0 +1,12 @@
+@use "base/mixins.scss";
+@use "base/variables.scss";
+
+.site-navigation__item {
+  @include mixins.list;
+}
+
+.site-navigation__link {
+  font: 400 20px/20px variables.$oswald-font;
+  color: variables.$basic-black;
+  text-transform: uppercase;
+}

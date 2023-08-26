@@ -1,0 +1,14 @@
+@use "base/variables.scss";
+
+.main-footer__description {
+  font: 400 16px/20px variables.$oswald-font;
+  text-transform: uppercase;
+}
+
+.main-footer__address {
+  font: 400 14px/20px variables.$lato-font;
+}
+
+.main-footer__contact-links {
+  background-color: variables.$basic-grey;
+}

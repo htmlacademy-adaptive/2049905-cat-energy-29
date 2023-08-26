@@ -1,0 +1,7 @@
+@use "base/variables.scss";
+
+.inner-header__description {
+  font: 400 14px/18px variables.$oswald-font;
+  color: variables.$basic-black;
+  text-transform: uppercase;
+}

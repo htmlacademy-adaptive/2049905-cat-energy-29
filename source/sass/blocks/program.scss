@@ -1,0 +1,23 @@
+@use "base/variables.scss";
+@use "base/mixins.scss";
+
+.program {
+  background-color: variables.$back-color-grey;
+}
+
+.program__title {
+  font: 400 24px/37px variables.$oswald-font;
+  color: variables.$basic-black;
+  text-transform: uppercase;
+}
+
+.program__text {
+  font: 400 14px/18px variables.$lato-font;
+  color: variables.$special-dark-grey;
+}
+
+.program__link {
+  font: 400 16px/16px variables.$oswald-font;
+  text-transform: uppercase;
+  color: variables.$basic-black;
+}

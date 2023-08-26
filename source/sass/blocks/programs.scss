@@ -1,0 +1,6 @@
+@use "base/variables.scss";
+@use "base/mixins.scss";
+
+.programs__item {
+  @include mixins.list;
+}

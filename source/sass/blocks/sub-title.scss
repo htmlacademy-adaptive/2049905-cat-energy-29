@@ -1,0 +1,9 @@
+@use "base/variables.scss";
+
+.sub-title {
+  font: 400 24px/26px variables.$oswald-font;
+
+  &--catalog {
+    line-height: 24px;
+  }
+}

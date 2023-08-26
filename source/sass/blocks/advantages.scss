@@ -1,0 +1,11 @@
+@use "base/variables.scss";
+@use "base/mixins.scss";
+
+.advantages__item {
+  @include mixins.list;
+}
+
+.advantages__text {
+  font: 400 14px/18px variables.$lato-font;
+  color: variables.$special-dark-grey;
+}

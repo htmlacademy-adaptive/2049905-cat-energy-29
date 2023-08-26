@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
       <header class="main-header">
@@ -38,13 +39,13 @@
           </button>
           <nav class="site-navigation">
             <ul class="site-navigation__list">
-              <li class="site-navigation__fieform__fieldset">
+              <li class="site-navigation__item">
               <a class="site-navigation__link" href="index.html">Главная</a>
               </li>
-              <li class="site-navigation__fieform__fieldset">
+              <li class="site-navigation__item">
               <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="site-navigation__fieform__fieldset">
+              <li class="site-navigation__item">
               <a class="site-navigation__link">Подбор программы</a>
               </li>
             </ul>
@@ -52,12 +53,18 @@
         </div>
       </header>
       <main class="main-content">
-      <h1 class="main-content__title title">Подбор программы</h1>
-      <p class="main-content__offer promo-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <section class="inner-header">
+          <h1 class="inner-header__title title">
+            Подбор программы
+          </h1>
+          <p class="inner-header__description">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+        </section>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Данные кота.</legend>
-          <label class="form__label">ИМЯ:*
+          <label class="form__label">Имя:*
             <input class="form__input" type="text" name="cat-name" placeholder="барсик" required>
           </label>
           <label class="form__label">Вес (кг):*
@@ -101,40 +108,40 @@
           <legend class="form__fieldset-title sub-title">Дополнительно</legend>
           <label class="form__label">
             <input class="form__box visually-hidden" type="checkbox" name="add-product" value="sweetener" checked>
-            <span class="form__check"></span>Сахарозаменитель
+            <span class="form__check">Сахарозаменитель</span>
           </label>
           <label class="form__label">
             <input class="form__box visually-hidden" type="checkbox" name="add-product" value="water">
-            <span class="form__check"></span>Питьевая вода
+            <span class="form__check">Питьевая вода</span>
           </label>
           <label class="form__label">
             <input class="form__box visually-hidden" type="checkbox" name="add-product" value="milk">
-            <span class="form__check"></span>Молоко
+            <span class="form__check">Молоко</span>
           </label>
           <label class="form__label">
             <input class="form__box visually-hidden" type="checkbox" name="add-product" value="vitamins">
-            <span class="form__check"></span>Витамины
+            <span class="form__check">Витамины</span>
           </label>
         </fieldset>
         <div class="form__wrapper">
-          <button class="form__button form-button" type="submit">Отправить заявку</button>
+          <button class="form__button button" type="submit">Отправить заявку</button>
           <span class="form__mark-require">* — Обязательные поля</span>
         </div>
       </form>
       </main>
       <footer class="main-footer">
-        <div class="main-footer__container">
-          <p class="main-footer__title">Приглашаем к сотрудничеству дилеров!</p>
+        <div class="main-footer__invite">
+          <p class="main-footer__description">Приглашаем к сотрудничеству дилеров!</p>
           <address class="main-footer__address">
             <span class="main-footer__street">ул. Большая Конюшенная, д. 19/8</span>
             <span class="main-footer__city">Санкт-Петербург</span>
           </address>
         </div>
-        <div class="main-footer__map">
-          <img class="main-footer__map-img" width="320" height="362" src="img/map.jpg" alt="Расположение компании на карте.">
-          <img class="main-footer__map-pin" width="57" height="53" src="img/map-pin.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <div class="main-footer__map map">
+          <img class="map__img" width="320" height="362" src="img/map.jpg" alt="Расположение компании на карте.">
+          <img class="map__pin" width="57" height="53" src="img/map-pin.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </div>
-        <div class="main-footer__contacts">
+        <div class="main-footer__contact-links">
           <a href="#" class="main-footer__logo logo-caption">
             <svg class="logo-caption__img logo-caption__img--footer" width="128" height="25" viewBox="0 0 128 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_83854_444)">
@@ -156,7 +163,7 @@
             </svg>
           </a>
           <ul class="main-footer__social-list social-list">
-            <li class="social-list__fieform__fieldset">
+            <li class="social-list__item">
               <a class="social-list__link"  href="#">
                 <span class="visually-hidden">Вконтакте.</span>
                 <svg class="social-list__img" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +171,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__fieform__fieldset">
+            <li class="social-list__item">
               <a class="social-list__link"  href="#">
                 <span class="visually-hidden">Ютуб.</span>
                 <svg class="social-list__img" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,7 +179,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__fieform__fieldset">
+            <li class="social-list__item">
               <a class="social-list__link"  href="#">
                 <span class="visually-hidden">Телеграм.</span>
                 <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
