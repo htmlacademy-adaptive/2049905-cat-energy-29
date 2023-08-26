@@ -1,0 +1,24 @@
+@use "base/variables.scss";
+
+.form__label {
+  font: 400 16px/18px variables.$oswald-font;
+  color: variables.$special-dark-grey;
+  text-transform: uppercase;
+}
+
+.form__input {
+
+  &::placeholder {
+    font: 400 16px/18px variables.$oswald-font;
+  color: variables.$special-dark-grey;
+  text-transform: uppercase;
+  }
+}
+
+.form__button {
+  border: none;
+}
+
+.form__mark-require {
+  font: 400 14px/16px variables.$lato-font;
+}

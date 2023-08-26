@@ -2,7 +2,7 @@
 @use "base/mixins.scss";
 
 .program {
-  background-color: variables.$back-color-gray;
+  background-color: variables.$back-color-grey;
 }
 .program__title {
   font: 400 24px/37px variables.$oswald-font;

@@ -1,9 +1,7 @@
 @use "base/variables";
 
 .page__body {
-  margin: 0;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: variables.$oswald-font;
+  font: 400 16px/20px variables.$oswald-font;
   color: variables.$basic-black;
+  margin: 0;
 }
