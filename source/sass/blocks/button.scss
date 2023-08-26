@@ -1,0 +1,12 @@
+@use "base/variables";
+
+.button {
+  font: 400 16px/20px variables.$oswald-font;
+  color: variables.$basic-white;
+  background-color: variables.$basic-green;
+  text-transform: uppercase;
+    &--hero {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

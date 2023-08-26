@@ -1,0 +1,6 @@
+@use "base/variables.scss";
+@use "base/mixins.scss";
+.hero {
+  background: linear-gradient(180deg, rgba(variables.$basic-green, 0.85) 81%, rgba(variables.$basic-white, 0.85) 81%), url(../img/index-background.jpg) no-repeat;
+  position: relative;
+}

@@ -1,0 +1,6 @@
+@use "base/variables.scss";
+
+.copyright__link {
+  font: 400 16px/20px variables.$lato-font;
+  color: variables.$special-dark-grey;
+}

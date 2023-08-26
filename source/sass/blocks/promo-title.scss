@@ -1,0 +1,10 @@
+@use "base/variables.scss";
+
+.promo-title {
+  font: 400 14px/14px variables.$oswald-font;
+  color: variables.$basic-black;
+  text-transform: uppercase;
+  &--mobile {
+    color: variables.$basic-white;
+  }
+}

@@ -1,0 +1,24 @@
+@use "base/variables.scss";
+
+.example {
+background-color: variables.$back-color-gray;
+}
+
+.example__text {
+  font: 400 14px/18px variables.$lato-font;
+  color: variables.$special-dark-grey;
+}
+.example__info-total {
+  font: 400 24px/24px variables.$oswald-font;
+  text-transform: uppercase;
+}
+
+.example__info-result {
+  font: 400 12px/12px variables.$lato-font;
+  color: variables.$special-dark-grey;
+}
+
+.example__info-price {
+  font: 400 14px/20px variables.$oswald-font;
+  text-transform: uppercase;
+}

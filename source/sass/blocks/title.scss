@@ -1,0 +1,13 @@
+@use "base/variables.scss";
+
+.title {
+  font: 400 36px/40px variables.$oswald-font;
+  color: variables.$basic-black;
+  &--mobile {
+    color: variables.$basic-white;
+    line-height: 36px;
+  }
+  &--mobile-black {
+    line-height: 36px;
+  }
+}
