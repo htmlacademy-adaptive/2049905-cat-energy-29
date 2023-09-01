@@ -1,6 +1,19 @@
 @use "base/variables.scss";
 
+.copyright {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright__link {
   font: 400 16px/20px variables.$lato-font;
   color: variables.$special-dark-grey;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .copyright {
+    width: 168px;
+  }
 }

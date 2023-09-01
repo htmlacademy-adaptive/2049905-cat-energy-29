@@ -1,7 +1,12 @@
 @use "base/variables.scss";
 @use "base/mixins.scss";
 
-
-.social-list__item {
-  @include mixins.list;
+.social-list {
+  list-style: none;
+  margin: 0 auto;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 280px;
 }

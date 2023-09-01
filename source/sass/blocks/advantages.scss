@@ -1,11 +1,51 @@
 @use "base/variables.scss";
 @use "base/mixins.scss";
 
-.advantages__item {
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.advantages__list {
   @include mixins.list;
+  display: grid;
+  gap: 20px;
+  padding-bottom: 45px;
+}
+
+.advantages__item {
+  padding-left: 80px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: variables.$basic-green;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/leaf.svg");
+  }
+
+  &--water::before {
+    background-image: url("../img/water.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/eat.svg");
+  }
+
+  &--clock::before {
+    background-image: url("../img/clock.svg");
+  }
 }
 
 .advantages__text {
   font: 400 14px/18px variables.$lato-font;
   color: variables.$special-dark-grey;
+  margin: 0;
 }

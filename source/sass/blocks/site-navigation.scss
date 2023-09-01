@@ -1,8 +1,32 @@
 @use "base/mixins.scss";
 @use "base/variables.scss";
 
-.site-navigation__item {
+.site-navigation__list {
   @include mixins.list;
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.site-navigation--close {
+  display: none;
+}
+
+.site-navigation--open {
+  position: absolute;
+  top: 66px;
+  width: 100vw;
+  min-width: 320px;
+  left: 50%;
+  transform: translate(-50%);
+  display: block;
+}
+
+.site-navigation__item {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid #e6e6e6;
 }
 
 .site-navigation__link {
@@ -10,3 +34,33 @@
   color: variables.$basic-black;
   text-transform: uppercase;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .site-navigation {
+    display: block;
+  }
+
+  .site-navigation__item {
+    border-top: none;
+  }
+
+  .site-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    width: 436px;
+  }
+
+  .site-navigation__link {
+    position: relative;
+
+    &--curent::after {
+      @include mixins.pseudo;
+      background-color: #68b738;
+      height: 2px;
+      left: 0;
+      width: 100%;
+      bottom: -10px;
+    }
+  }
+}
+

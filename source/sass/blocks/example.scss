@@ -2,6 +2,13 @@
 
 .example {
   background-color: variables.$back-color-grey;
+  margin: 0;
+  padding: 0;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__text {
@@ -9,14 +16,27 @@
   color: variables.$special-dark-grey;
 }
 
+.example__item {
+  position: relative;
+}
+
 .example__info-total {
   font: 400 24px/24px variables.$oswald-font;
   text-transform: uppercase;
+  outline: 1px solid #000000;
+  text-align: center;
+  padding: 15px;
 }
 
 .example__info-result {
+  position: absolute;
+  width: 80px;
+  top: 46px;
   font: 400 12px/12px variables.$lato-font;
   color: variables.$special-dark-grey;
+  text-align: center;
+  margin-left: 0;
+  background-color: #eaeaea;
 }
 
 .example__info-price {

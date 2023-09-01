@@ -1,6 +1,6 @@
 @use "base/variables.scss";
 @use "base/mixins.scss";
 
-.additional__item {
+.additional__list {
   @include mixins.list;
 }

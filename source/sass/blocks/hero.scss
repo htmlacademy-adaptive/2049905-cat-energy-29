@@ -1,11 +1,38 @@
 @use "base/variables.scss";
 
 .hero {
-  background: linear-gradient(rgba(variables.$basic-green, 0.85), rgba(variables.$basic-green, 0.85)), url("../img/index-background.jpg") no-repeat;
+  background-image: linear-gradient(#64a73c, #63a63b);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 305px;
+}
+
+.hero__container {
+  background-image: linear-gradient(rgba(variables.$basic-green, 0.85), rgba(variables.$basic-green, 0.85)), url("../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 305px;
+  text-align: center;
 }
 
 .hero__promo {
   font: 400 14px/14px variables.$oswald-font;
   color: variables.$basic-white;
   text-transform: uppercase;
+}
+
+.hero-title {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .hero {
+    background-image: none;
+  }
+
+  .hero__container {
+    background-image: none;
+  }
 }
