@@ -13,7 +13,7 @@
   border: none;
   cursor: pointer;
   background-color: #ffffff;
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("../img/icons/burger.svg");
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -34,5 +34,24 @@
 @media (min-width: variables.$desktop-width) {
   .main-header__container {
     padding-top: 55px;
+  }
+
+  .main-header__container--index {
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      display: block;
+      width: 50%;
+      min-height: 696px;
+      top: 0;
+      right: 0;
+      left: inherit;
+      background-image: url("../img/backgrounds/index-background-desktop.jpg");
+      background-color: #63a73a;
+      background-position: 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }

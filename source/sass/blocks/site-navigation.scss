@@ -48,18 +48,26 @@
     display: flex;
     justify-content: space-between;
     width: 436px;
+    background-color: transparent;
   }
 
   .site-navigation__link {
-    position: relative;
+    padding-bottom: 10px;
 
-    &--curent::after {
-      @include mixins.pseudo;
-      background-color: #68b738;
-      height: 2px;
-      left: 0;
-      width: 100%;
-      bottom: -10px;
+    &--curent {
+      border-bottom: 2px solid #68b738;
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .site-navigation__link {
+    &--index {
+      color: variables.$basic-white;
+    }
+
+    &--index-curent {
+      border-bottom: 2px solid variables.$basic-white;
     }
   }
 }

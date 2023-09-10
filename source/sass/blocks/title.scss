@@ -1,15 +1,21 @@
 @use "base/variables.scss";
 
 .title {
-  font: 400 36px/36px variables.$oswald-font;
-  color: variables.$basic-white;
-  margin: 0;
+  font: 400 36px/40px variables.$oswald-font;
+  color: variables.$basic-black;
+
+  &--hero {
+    color: variables.$basic-white;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .title {
-    color: variables.$basic-black;
     font-size: 60px;
     line-height: 60px;
+
+    &--hero {
+      color: variables.$basic-black;
+    }
   }
 }

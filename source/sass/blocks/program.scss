@@ -4,17 +4,34 @@
 .program {
   background-color: variables.$back-color-grey;
   position: relative;
+  padding: 20px;
 
   &::before {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: variables.$basic-green;
-    background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
-    background-position: 50%;
+  }
+}
+
+.program--slim {
+  &::before {
+    background-image: url("../img/icons/cat-slim.svg");
+    width: 50px;
+    height: 54px;
+    background-size: 50px 54px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.program--pro {
+  &::before {
+    background-image: url("../img/icons/cat-pro.svg");
+    width: 68px;
+    height: 54px;
+    background-size: 67px 50px;
+    top: 20px;
+    left: 20px;
   }
 }
 
@@ -23,15 +40,99 @@
   color: variables.$basic-black;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 29px;
+  padding-left: 90px;
 }
 
 .program__text {
   font: 400 14px/18px variables.$lato-font;
   color: variables.$special-dark-grey;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program__link {
   font: 400 16px/16px variables.$oswald-font;
   text-transform: uppercase;
   color: variables.$basic-black;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .program {
+    min-height: 372px;
+    padding-left: 53px;
+    padding-right: 280px;
+    padding-top: 77px;
+    padding-bottom: 57px;
+  }
+
+  .program--slim {
+    &::before {
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
+      top: 80px;
+      left: 420px;
+    }
+  }
+
+  .program--pro {
+    &::before {
+      width: 268px;
+      height: 200px;
+      background-size: 268px 200px;
+      top: 90px;
+      left: 380px;
+    }
+  }
+
+  .program__title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program__text {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .program {
+    padding-right: 60px;
+  }
+
+  .program--slim {
+    &::before {
+      width: 100px;
+      height: 110px;
+      background-size: 100px 110px;
+      top: 41px;
+      left: 52px;
+    }
+  }
+
+  .program--pro {
+    &::before {
+      width: 134px;
+      height: 100px;
+      background-size: 134px 100px;
+      top: 47px;
+      left: 33px;
+    }
+  }
+
+  .program__title {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
 }

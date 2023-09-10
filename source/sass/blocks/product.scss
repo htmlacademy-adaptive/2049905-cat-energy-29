@@ -12,3 +12,13 @@
 .product__description {
   font: 400 12px/16px variables.$lato-font;
 }
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

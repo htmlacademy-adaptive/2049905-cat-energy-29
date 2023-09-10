@@ -11,6 +11,10 @@
   &--tablet {
     display: none;
   }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -22,9 +26,25 @@
     &--tablet {
       display: block;
     }
+
+    &--desktop {
+      display: none;
+    }
   }
 
   .logo__text {
     display: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .logo__img {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

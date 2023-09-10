@@ -5,6 +5,9 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
       <header class="main-header">
@@ -13,6 +16,7 @@
             <a class="main-header__link logo" href="index.html">
                 <img class="logo__img logo__img--mobile" src="img/logo-mobile.svg" alt="Логотип Cat Energy." width="33" height="38">
                 <img class="logo__img logo__img--tablet" src="img/logo-tablet.svg" alt="Логотип Cat Energy." width="174" height="50">
+                <img class="logo__img logo__img--desktop" src="img/logo-desktop.svg" alt="Логотип Cat Energy." width="202" height="59">
                 <img class="logo__text" src="img/main-logo.svg" alt="Текст логотипа Cat Energy." width="128" height="25">
             </a>
             <button class="main-header__toggle" type="button">
@@ -35,12 +39,15 @@
         </div>
       </header>
       <main class="main-content">
-      <section class="inner-header inner-header--catalog">
-        <h1 class="inner-header__title title title--mobile-black">
+      <section class="inner-header">
+        <div class="inner-header__container container">
+        <h1 class="inner-header__title title">
           Каталог продукции
         </h1>
+      </div>
       </section>
       <section class="catalog">
+        <div class="catalog__container container">
         <h2 class="catalog__title visually-hidden">Список доступных товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item product">
@@ -48,6 +55,7 @@
               <a href="#" class="product__link-img">
                 <img class="product__img" src="img/products/product-chicken-small.png" alt="Cat Energy с курицей, 500г">
               </a>
+              <div class="product__info-wrapper">
             <h3 class="product__title">
               <a href="#" class="product__link" name="pro">
                 Cat Energy PRO 500 г
@@ -67,6 +75,7 @@
                 <dd class="product__specification-value">700 ₽</dd>
               </div>
             </dl>
+          </div>
           </div>
             <a class="product__button-order button" href="#">Заказать</a>
           </li>
@@ -246,8 +255,10 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
       <section class="additional">
+        <div class="additional-container container">
           <h2 class="additional__title sub-title sub-title--catalog">Дополнительные товары</h2>
           <ul class="additional__list">
             <li class="additional__item add-product">
@@ -286,6 +297,7 @@
           <div class="additional__gift gift">
             <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
           </div>
+        </div>
       </section>
       </main>
       <footer class="main-footer">

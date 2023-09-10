@@ -1,6 +1,26 @@
 @use "base/variables.scss";
 @use "base/mixins.scss";
 
+.programs__container {
+  padding-bottom: 20px;
+}
+
 .programs__list {
   @include mixins.list;
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .programs__container {
+    padding-bottom: 45px;
+  }
+}
+
+
+@media (min-width: variables.$desktop-width) {
+  .programs__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
