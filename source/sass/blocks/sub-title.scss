@@ -2,9 +2,20 @@
 
 .sub-title {
   font: 400 24px/26px variables.$oswald-font;
-  margin: 0;
+  position: relative;
+  padding: 0 20px;
 
   &--catalog {
     line-height: 24px;
   }
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 55%;
+    background-color: variables.$basic-green;
+  }
 }
+
+

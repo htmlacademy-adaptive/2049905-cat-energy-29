@@ -16,9 +16,150 @@
 .product {
   display: flex;
   flex-direction: column;
+  padding: 20px 0 25px 0;
+  border-top: 1px  solid #ebebeb;
+
+  &--more {
+    padding-top: 25px;
+    align-items: center;
+    border-bottom: 1px  solid #ebebeb;
+  }
 }
 
 .product__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.product__link-img {
+  width: 140px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+}
+
+.product__info-wrapper {
+  width: 140px;
+  margin-bottom: 32px;
+}
+
+.product__specifications {
+  margin: 0;
+}
+
+.product__specification {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__specification-value {
+  margin-left: 0;
+}
+
+.product__title {
+  width: 80px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.product__title--more {
+  width: auto;
+  margin: 0;
+  margin-bottom: 8px;
+
+  &::before {
+    display: block;
+    content: "";
+    margin: 0 auto;
+    margin-bottom: 23px;
+    background-image: url("../img/icons/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.product__description {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.product__button-order {
+  width: 100%;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .product {
+    align-items: center;
+    padding: 0 37px 40px 37px;
+    min-height: 511px;
+    background-image: linear-gradient(variables.$basic-white 40px, variables.$basic-grey 40px);
+    border-top: none;
+    justify-content: space-between;
+    width: auto;
+
+    &--more {
+      margin-top: 40px;
+      background: none;
+      outline: 1px solid variables.$basic-grey;
+      border: none;
+    }
+  }
+
+  .product__link {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .product__wrapper {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .product__info-wrapper {
+    width: auto;
+  }
+
+  .product__specifications {
+    width: 250px;
+  }
+
+  .product__specification {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__title {
+    text-align: center;
+    margin: 0 auto;
+    width: 135px;
+    margin-bottom: 21px;
+  }
+
+  .product__specification-name,
+  .product__specification-value,
+  .product__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+  .product__link-img {
+    min-height: 210px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .product {
+    background-image: linear-gradient(variables.$basic-white 70px, variables.$basic-grey 70px);
+  }
+
+  .product__specifications {
+    width: 169px;
+  }
 }
