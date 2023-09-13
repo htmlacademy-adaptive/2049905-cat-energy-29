@@ -1,3 +1,50 @@
-.logo {
-  margin: 0;
+@use "base/variables.scss";
+
+.logo__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo__img {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .logo__img {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  .logo__text {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .logo__img {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

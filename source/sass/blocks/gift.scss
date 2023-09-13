@@ -1,12 +1,67 @@
 @use "base/variables.scss";
 
 .gift {
-  height: 300px;
-  position: relative;
-  background: linear-gradient(rgba(variables.$basic-green, 0.85), rgba(variables.$basic-green, 0.85)), url("../img/cat-in-bag@1x.jpg") no-repeat;
+  min-height: 290px;
+  background-image: url("../img/backgrounds/gift-background-mobile.jpg");
+  background-repeat: no-repeat;
+  padding-top: 58px;
+  padding-bottom: 25px;
+
+  &::before {
+    display: block;
+    content: "";
+    background-image: url("../img/icons/gift.svg");
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }
 
 .gift__text {
   font: 400 16px/20px variables.$lato-font;
   color: variables.$basic-white;
+  text-align: center;
+  width: 160px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .gift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+    background-image: url("../img/backgrounds/gift-background-tablet.jpg");
+    padding: 55px 80px;
+
+    &::before {
+      margin: 0;
+    }
+  }
+.gift__text {
+  text-align: left;
+  margin: 0;
+  margin-right: 30px;
+}
+
+}
+
+@media (min-width: variables.$desktop-width) {
+  .gift {
+    flex-direction: column;
+    flex-grow: 1;
+    height: 288px;
+    background-image: url("../img/backgrounds/gift-background-mobile.jpg");
+    padding: 0;
+    &::before{
+      margin-top: 55px;
+    }
+  }
+  .gift__text {
+    margin-right: 0;
+    margin-bottom: 43px;
+    text-align: center;
+  }
 }

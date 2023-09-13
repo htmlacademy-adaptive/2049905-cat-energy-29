@@ -1,6 +1,23 @@
 @use "base/mixins.scss";
 @use "base/variables.scss";
 
-.catalog__item {
+.catalog__list {
   @include mixins.list;
+  display: grid;
+  margin-bottom: 25px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }

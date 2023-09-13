@@ -1,4 +1,24 @@
+@use "base/variables.scss";
+
 .container {
-  min-width: 320px;
+  width: 320px;
   padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: variables.$tablet-width) {
+    //width: 708px;
+    //padding: 0;
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1300px;
+    padding: 0 40px;
+  }
 }
+
+//::-webkit-scrollbar {
+//  width: 0;
+//}
